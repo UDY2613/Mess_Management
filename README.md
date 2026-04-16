@@ -1,80 +1,102 @@
-# Mess Portal 🍽️
-**A D3 Fest Hackathon Submission**
+# [MESS PORTAL](https://mess.dashroshan.com)
 
-Develop a comprehensive solution for mess management to remove the hassle of buying paper coupons and provide a centralized platform for both students and administrators. 
+[**A D3 Fest Hackathon submission**](https://d3fest.tech)
 
-### 🧱 Problem Statement (D3H05)
-The solution provides necessary facilities to the mess admin and the students. For mess admins, they can manage coupons, menu details, and pricing via a dedicated dashboard. Students can buy coupons from their dashboard, deciding their desired meals for the week. 
+### Team members:
 
-**Core Objectives:**
-* **Task 1:** Implement QR codes for each meal a day in place of paper coupons.
-* **Task 2:** Integrate Razorpay for seamless online payments.
+- Roshan Dash (Developer)
+- Subhajit Chatterjee (UI/UX, Documentation)
 
----
+### ▶️ [View it on YouTube](https://www.youtube.com/watch?v=QqCdYTh8L7o)
 
-## ✨ Salient Features
+## 🧱 PROBLEM STATEMENT
 
-### For Students
-* **Weekly Overview:** View the weekly menu, timings, and costs in one place.
-* **Online Purchasing:** Decide and purchase desired meals online seamlessly.
-* **Purchase History:** Review the meals purchased for both the present and upcoming week.
-* **Digital Identity:** Use a single, unique QR code instead of paper coupons to claim meals.
+**D3H05**
 
-### For Mess Owners (Admins)
-* **Menu Management:** Manage the menu items, edit timings, and regulate prices.
-* **Forecasting:** Track the total meals to be cooked based on purchased coupons.
-* **QR Verification:** Scan and verify student QR codes to provide meals efficiently.
-* **Payment Gateway:** Accept online payments securely via Razorpay integration.
+Develop a solution for mess management. The solution should provide facilities to the mess admin and the students. For mess admins, they can manage coupons and other necessary details like menu, and pricing in the mess dashboard. Students can buy coupons from the mess dashboard only, deciding their desired meals for the week. The aim of the project will be to remove the hassle of buying coupons and provide a centralized platform for mess management.
 
----
+- **Task 1 -** QR codes for each meal a day in place of paper coupons
+- **Task 2 -** Razorpay Integration
 
-## 🎯 Detailed Description & Walkthrough
+## ✨ SALIENT FEATURES OF OUR SOLUTION
 
-### Student Services
+- For **MESS OWNERS** :
 
-**Home Page & Menu**
-View the mess timings and the daily menu right from the home page.
-![](/assets/time_menu.jpg)
+  Has specialised mess dashboard where the admin can :
 
-**Google Authentication**
-Students sign in securely using their respective Google accounts. Access can be restricted to specific institutional domains (e.g., `iiit-bh.ac.in`).
-![](/assets/google_signin.jpg)
+  - _Manage the menu_
+  - _Edit timings_
+  - _Regulate prices_
+  - _Know total meals to be cooked_
+  - _Scan and verify QR codes to provide meal_
+  - _Razorpay integration to accept online payments_
 
-**Buying Coupons**
-Students select their desired meals for the upcoming week using a checkbox system. The total amount is calculated and displayed at the bottom before checkout.
-![](/assets/purchase_page.jpg)
+- For **STUDENTS** :
 
-**Payment Integration**
-Clicking "Continue with Payment" directs the student to the Razorpay gateway to securely complete their transaction.
-![](/assets/payment.jpg)
+  They gain access to :
 
-**Purchase History**
-A dedicated dashboard to check which meal and day coupons are active for the current and upcoming weeks.
-![](/assets/purchase_history.jpg)
+  - _View the weekly menu, timining, and costs_
+  - _Decide and purchase their desired meals online_
+  - _Review the meals purchased (for both present and next week)_
+  - _Using a single QR code instead of paper coupons_
 
-**QR Code Generation**
-Students receive a unique, static QR code. This acts as a digital ID and can be scanned directly from a smartphone or printed. If compromised, a new QR code can be generated instantly.
-![](/assets/qr_code.jpg)
+## 🎯 DETAILED DESCRIPTION
 
-### Administrator Services
+- ### STUDENT SERVICES
 
-**Admin Panel**
-An intuitive interface to edit the cost, timings, and items on the weekly menu.
-![](/assets/admin_panel.jpg)
+  - **Mess time and menu on the home page**
 
-**Total Meals Tracker**
-Displays the exact count of meals to be cooked for the present and upcoming weeks based on the real-time purchasing data.
-![](/assets/total_meals.jpg)
+    ![](/assets/time_menu.jpg)
 
-**Scan & Verify QR**
-Admins select the current meal type and scan student QR codes. 
-* **Green Tick:** The student has purchased the coupon for that specific meal/day.
-* **Red Cross:** The student has not purchased the meal or has already claimed it.
-Admins can simply press "Scan New" for the next student in line.
-![](/assets/scan_qr.jpg)
+  - **Signing in to the account**
 
----
+    The students can sign in using their respective Google accounts using the sign in option. Login can be restricted to certain domains like iiit-bh.ac.in
 
-## 👥 Team Members
-* **Uday Deshpande**
-* **Atharva Bakre**
+    ![](/assets/google_signin.jpg)
+
+  - **Buying coupons for next week**
+
+    The student can apply for desired meals by selecting among the checkboxes. The final amount is displayed at the bottom for payment.
+
+    ![](/assets/purchase_page.jpg)
+
+    Upon clicking "Continue with Payment", the student is directed to the Payment Gateway of Razorpay to complete their purchase.
+
+    ![](/assets/payment.jpg)
+
+  - **Purchase history**
+
+    The student can check which meal and day coupons they have bought for the current and upcoming week.
+
+    ![](/assets/purchase_history.jpg)
+
+  - **Using QR code**
+
+    The student will be provided a unique (static) QR code which can be used directly using smartphones or can also be printed and used just like an ID.
+    In the case that the students feel that their QR code has been compromised, they can create a new QR code.
+
+    ![](/assets/qr_code.jpg)
+
+- ### ADMINISTRATOR SERVICES :
+
+  - **Admin panel**
+
+    This provides interface to edit the cost, time, and items of the weekly menu.
+
+    ![](/assets/admin_panel.jpg)
+
+  - **Total meals**
+
+    This page shows the total meals to be cooked for the present week as well as the upcoming week based on the total coupons purchased.
+
+    ![](/assets/total_meals.jpg)
+
+  - **Scan QR code**
+
+    This allows to scan and verify the mess QR codes. After selecting the meal type, upon hovering the camera over a mess QR code it shows a tick mark if the person has purchased coupon for the given meal on the given day. Or a cross mark if the person has not purchased the meal, or have already claimed it.
+
+    ![](/assets/scan_qr.jpg)
+
+    The admin can press "Scan New" to check a new QR code.
+
+## ❤️ Team Zenith
